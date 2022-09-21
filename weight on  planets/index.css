@@ -1,0 +1,107 @@
+body{
+    background-image: url('bgimg.webp');
+}
+#heading{
+    color: beige;
+    text-align: center;
+}
+#input{
+    color: beige;
+    text-align: center;
+}
+#weight{
+    text-align: center;
+}
+#center{
+    text-align: center;
+}
+#output{
+    color: beige;
+    justify-items: center;
+    text-align:center;
+    height: 30px;
+    width: 150px;
+    background-color: rgba(109, 123, 154, 0.628);
+    color:rgb(235, 238, 219);
+    margin-left: 43.5%;
+    padding-top: 1.65%;
+    border-radius: 5%;
+}
+
+#mercury:Before{
+    content: ;
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:rgba(255, 255, 255, 0.037);
+    z-index:-1;
+    filter: brightness(1.2);
+    filter: contrast(1.5);
+}
+
+#mercury:after{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:rgba(255, 255, 255, 0.215);
+    z-index:-1;
+}
+.color{
+    color: beige;
+}
+#enter{
+    text-align: center;
+}
+#mercury:hover,#mars:hover,#venus:hover,#jupiter:hover,#saturn:hover,#uranus:hover,#neptune:hover{
+    opacity:0.92;
+    transform:scale(1.35);
+    filter: brightness(1.35);
+    filter: contrast(160%);
+}
+#mercury:hover,#mars:hover,#venus:hover,#jupiter:hover,#saturn:hover,#uranus:hover,#neptune:hover{
+    filter: drop-shadow(2.75px 2.75px 4px rgba(96, 95, 95, 0.696));
+}
+/*.mars {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+}
+
+.mars:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+}
+
+.mars > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear infinite;
+    background: url(https://i.stack.imgur.com/3SLqF.jpg);
+    /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
+    /*background-size: cover;
+}
+
+@keyframes spin {
+    to {
+        transform: translateX(-50%);
+    }
+}*/
